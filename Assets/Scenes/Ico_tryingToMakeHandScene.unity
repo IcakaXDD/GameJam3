@@ -318,6 +318,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0ef5d5508ff58f94db43deb9f10d6170, type: 3}
   - {fileID: 8300000, guid: d80f9daffa2a97c45a35dd965c277c5c, type: 3}
   - {fileID: 8300000, guid: 0ef5d5508ff58f94db43deb9f10d6170, type: 3}
+  isQuestion: 0
 --- !u!1 &130743053
 GameObject:
   m_ObjectHideFlags: 0
@@ -1113,6 +1114,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4763e566245be0e4f96bf3152871f1bf, type: 3}
   - {fileID: 8300000, guid: 84c637de1fe96724d947cbe1d4ec8c9a, type: 3}
   - {fileID: 8300000, guid: 4763e566245be0e4f96bf3152871f1bf, type: 3}
+  isQuestion: 0
 --- !u!4 &1180359985 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8607912437448045643, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}

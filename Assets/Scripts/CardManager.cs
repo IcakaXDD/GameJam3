@@ -5,7 +5,8 @@ public class CardManager : MonoBehaviour
 {
     public static int level = 0;
     public List<Dialogue> dialogue;
-    public DialogueManager dialogueManager;
+    public DialogueManager dialogueManager;    
+    public int cardID;
 
     private void OnMouseDown()
     {

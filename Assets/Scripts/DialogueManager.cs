@@ -15,6 +15,8 @@ public class DialogueManager : MonoBehaviour
     public List<AudioClip> audioNarration;
     private int audioNumber=0;
     public AudioSource audioInPlay;
+
+    public AnswerChecker answerChecker;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -73,6 +75,10 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("EndConvo");
         audioNumber = 0;
         isDialogueFinished= true;
+        if (!dialogue.isQuestion)
+        {
+            answerChecker.CheckAnswer();
+        }
     }
     IEnumerator TypeSentence(string sentence)
     {

@@ -6,4 +6,6 @@ public class Dialogue: MonoBehaviour
     public string[] sentences;
     public AudioClip[] sounds;
 
+    public bool isQuestion;
+
 }
