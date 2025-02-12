@@ -315,9 +315,9 @@ MonoBehaviour:
   - 'Brat '
   - grumni se
   sounds:
-  - {fileID: 8300000, guid: 0ef5d5508ff58f94db43deb9f10d6170, type: 3}
-  - {fileID: 8300000, guid: d80f9daffa2a97c45a35dd965c277c5c, type: 3}
-  - {fileID: 8300000, guid: 0ef5d5508ff58f94db43deb9f10d6170, type: 3}
+  - {fileID: 8300000, guid: 6194de1fe043b754896a847adfed2e31, type: 3}
+  - {fileID: 8300000, guid: 1cac50b1525101944bf8cf25916b99ab, type: 3}
+  - {fileID: 8300000, guid: 6194de1fe043b754896a847adfed2e31, type: 3}
   isQuestion: 0
 --- !u!1 &130743053
 GameObject:
@@ -368,6 +368,58 @@ MonoBehaviour:
   isDialogueFinished: 0
   audioNarration: []
   audioInPlay: {fileID: 1310215875}
+  answerChecker: {fileID: 979027259}
+--- !u!1 &301809070
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 301809071}
+  - component: {fileID: 301809072}
+  m_Layer: 0
+  m_Name: TestDialog3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &301809071
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301809070}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1310360180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &301809072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301809070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3fc39b0506d41449b9dec3cd3e36689, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sentences:
+  - 'maina '
+  - imashe edna rabota
+  sounds:
+  - {fileID: 8300000, guid: 1cac50b1525101944bf8cf25916b99ab, type: 3}
+  - {fileID: 8300000, guid: 6194de1fe043b754896a847adfed2e31, type: 3}
+  isQuestion: 0
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,6 +1055,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &979027258
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 979027260}
+  - component: {fileID: 979027259}
+  m_Layer: 0
+  m_Name: AnswerChecker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &979027259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979027258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a0109d37e6ff8e40ae34fdc24a0a13d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answeredCard: 0
+  rightCardId: 1
+--- !u!4 &979027260
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979027258}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.028378725, y: 7.820479, z: -9.610786}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1072087428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1110,11 +1208,11 @@ MonoBehaviour:
   - Fran is in love
   - because lubo is gay
   sounds:
-  - {fileID: 8300000, guid: 84c637de1fe96724d947cbe1d4ec8c9a, type: 3}
-  - {fileID: 8300000, guid: 4763e566245be0e4f96bf3152871f1bf, type: 3}
-  - {fileID: 8300000, guid: 84c637de1fe96724d947cbe1d4ec8c9a, type: 3}
-  - {fileID: 8300000, guid: 4763e566245be0e4f96bf3152871f1bf, type: 3}
-  isQuestion: 0
+  - {fileID: 8300000, guid: 1cac50b1525101944bf8cf25916b99ab, type: 3}
+  - {fileID: 8300000, guid: 6194de1fe043b754896a847adfed2e31, type: 3}
+  - {fileID: 8300000, guid: 1cac50b1525101944bf8cf25916b99ab, type: 3}
+  - {fileID: 8300000, guid: 6194de1fe043b754896a847adfed2e31, type: 3}
+  isQuestion: 1
 --- !u!4 &1180359985 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8607912437448045643, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
@@ -1280,6 +1378,7 @@ Transform:
   m_Children:
   - {fileID: 1083681566}
   - {fileID: 73965571}
+  - {fileID: 301809071}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1499563166
@@ -2592,6 +2691,14 @@ PrefabInstance:
       value: Hand
       objectReference: {fileID: 0}
     - target: {fileID: 937297218504298700, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: cardID
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 937297218504298700, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: answerChecker
+      value: 
+      objectReference: {fileID: 979027259}
+    - target: {fileID: 937297218504298700, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 130743056}
@@ -2612,17 +2719,57 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 359391915}
     - target: {fileID: 1664924552328017831, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: cardID
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664924552328017831, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: answerChecker
+      value: 
+      objectReference: {fileID: 979027259}
+    - target: {fileID: 1664924552328017831, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 130743056}
     - target: {fileID: 2952006107331775629, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: cardID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2952006107331775629, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: answerChecker
+      value: 
+      objectReference: {fileID: 979027259}
+    - target: {fileID: 2952006107331775629, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 130743056}
+    - target: {fileID: 2952006107331775629, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2952006107331775629, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: 'dialogue.Array.data[0]'
+      value: 
+      objectReference: {fileID: 301809072}
+    - target: {fileID: 4072393614217117907, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: cardID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4072393614217117907, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: answerChecker
+      value: 
+      objectReference: {fileID: 979027259}
     - target: {fileID: 4072393614217117907, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 130743056}
+    - target: {fileID: 7669269751350471365, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: cardID
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7669269751350471365, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: answerChecker
+      value: 
+      objectReference: {fileID: 979027259}
     - target: {fileID: 7669269751350471365, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: dialogueManager
       value: 
@@ -3011,3 +3158,4 @@ SceneRoots:
   - {fileID: 1310360180}
   - {fileID: 8806903230230499956}
   - {fileID: 1310215876}
+  - {fileID: 979027260}
