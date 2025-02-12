@@ -36,18 +36,19 @@ public class DialogueManager : MonoBehaviour
         }
     }
     
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(Dialogue dialogue_running)
     {
         Debug.Log("Starting conversation");
         isDialogueFinished = false;
+        dialogue = dialogue_running;
         sentences.Clear();
         audioNarration.Clear();
 
-        foreach (string sentence in dialogue.sentences)
+        foreach (string sentence in dialogue_running.sentences)
         {
             sentences.Enqueue(sentence);
         }
-        foreach(AudioClip audio in dialogue.sounds)
+        foreach(AudioClip audio in dialogue_running.sounds)
         {
             audioNarration.Add(audio);
         }
@@ -75,8 +76,13 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("EndConvo");
         audioNumber = 0;
         isDialogueFinished= true;
+        
         if (!dialogue.isQuestion)
         {
+            while (audioInPlay.isPlaying)
+            {
+                
+            }
             answerChecker.CheckAnswer();
         }
     }

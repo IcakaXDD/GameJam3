@@ -3,18 +3,20 @@ using UnityEngine;
 
 public class AnswerChecker : MonoBehaviour
 {
-    [SerializeField] CardManager cardManager;
+    [SerializeField]public int answeredCard;
     [SerializeField] int rightCardId;
 
     public void CheckAnswer()
     {
-        if(cardManager.cardID == rightCardId)
+        if(answeredCard == rightCardId)
         {
             //load next scene
+            Debug.Log("AIDEE");
         }
         else
         {
             // UI Game over
+            Debug.Log("Manja s grozde");
         }
     }
     
