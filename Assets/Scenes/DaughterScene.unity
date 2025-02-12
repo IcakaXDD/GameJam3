@@ -315,6 +315,7 @@ MonoBehaviour:
   isDialogueFinished: 0
   audioNarration: []
   audioInPlay: {fileID: 2074013901}
+  answerChecker: {fileID: 0}
 --- !u!1 &232908572
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,6 +373,7 @@ MonoBehaviour:
   sounds:
   - {fileID: 8300000, guid: 7c0b7fad64f64104ab2040c901f6edac, type: 3}
   - {fileID: 8300000, guid: cf913644e964b6846b42970a757e8634, type: 3}
+  isQuestion: 0
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1116,6 +1118,7 @@ MonoBehaviour:
     newly developed hatred for you caused her to slit her wrists. You're not recovering
     from that.
   sounds: []
+  isQuestion: 0
 --- !u!1 &1083681565
 GameObject:
   m_ObjectHideFlags: 0
@@ -1183,6 +1186,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3072435fa1a66f345bd4b7fbf1b383c8, type: 3}
   - {fileID: 8300000, guid: 3a53cf38c46b8354c8d81b394ec9e717, type: 3}
   - {fileID: 8300000, guid: f0a213081337d2440a85c677ffb818e9, type: 3}
+  isQuestion: 0
 --- !u!4 &1180359985 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8607912437448045643, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
@@ -1275,6 +1279,7 @@ MonoBehaviour:
     get impaled by their spears from all sides.
   sounds:
   - {fileID: 0}
+  isQuestion: 0
 --- !u!1 &1425676523
 GameObject:
   m_ObjectHideFlags: 0
@@ -1325,6 +1330,7 @@ MonoBehaviour:
     do. At the end of your pathetic attempts to trick him, he still has his way with
     your daughter, and you're punished with 20 lashes for trying to disobey orders.
   sounds: []
+  isQuestion: 0
 --- !u!1 &1499563166
 GameObject:
   m_ObjectHideFlags: 0
@@ -1808,6 +1814,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1782665642}
   m_CullTransparentMesh: 1
+--- !u!1001 &1846181048
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1300071142533208, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_Name
+      value: Chaise_HP_t1_F_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
 --- !u!1 &1988529794
 GameObject:
   m_ObjectHideFlags: 0
@@ -1857,6 +1932,7 @@ MonoBehaviour:
     do something he's set out to do? He laughs at you, and you're demoted to court
     jester for being such a hilarious laughingstock.
   sounds: []
+  isQuestion: 0
 --- !u!1 &2074013900
 GameObject:
   m_ObjectHideFlags: 0
@@ -2942,7 +3018,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8607912437448045643, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.51
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 8607912437448045643, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3328,3 +3404,4 @@ SceneRoots:
   - {fileID: 1310360180}
   - {fileID: 8806903230230499956}
   - {fileID: 2074013902}
+  - {fileID: 1846181048}

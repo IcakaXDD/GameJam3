@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\Dialogue.cs" />
     <Compile Include="Assets\Scripts\DialogueTrigger.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\DrawnCard.cs" />
     <Compile Include="Assets\Scripts\DialogueManager.cs" />
     <Compile Include="Assets\_ExternalAssets\Package\CollectionSystem.cs" />
     <Compile Include="Assets\Scripts\AnswerChecker.cs" />
