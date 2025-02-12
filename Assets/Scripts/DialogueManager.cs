@@ -10,6 +10,11 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     public Dialogue dialogue;
     public Queue<string> sentences;
+
+
+    public List<AudioClip> audioNarration;
+    private int audioNumber=0;
+    public AudioSource audioInPlay;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,24 +26,30 @@ public class DialogueManager : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
+            audioNumber++;
             DisplayNextSentence();
+            
         }
     }
     public void TriggerDialoge()
     {
-        FindFirstObjectByType<DialogueManager>().StartDialogue(dialogue);
+        StartDialogue(dialogue);
     }
     public void StartDialogue(Dialogue dialogue)
     {
         Debug.Log("Starting conversation");
 
         sentences.Clear();
+        audioNarration.Clear();
 
         foreach (string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
         }
-
+        foreach(AudioClip audio in dialogue.sounds)
+        {
+            audioNarration.Add(audio);
+        }
         DisplayNextSentence();
     }
 
@@ -52,14 +63,17 @@ public class DialogueManager : MonoBehaviour
 
         string sentence = sentences.Dequeue();
         
-
+        
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
+        audioInPlay.clip = audioNarration[audioNumber];
+        audioInPlay.Play();
     }
 
     public void EndDialogue()
     {
         Debug.Log("EndConvo");
+        audioNumber = 0;
     }
     IEnumerator TypeSentence(string sentence)
     {
