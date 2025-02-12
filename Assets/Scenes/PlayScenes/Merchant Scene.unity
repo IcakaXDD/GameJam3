@@ -266,6 +266,135 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15710025}
   m_CullTransparentMesh: 1
+--- !u!1 &68937082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 68937084}
+  - component: {fileID: 68937083}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &68937083
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68937082}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &68937084
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68937082}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &130743053
 GameObject:
   m_ObjectHideFlags: 0
@@ -314,7 +443,7 @@ MonoBehaviour:
   dialogue: {fileID: 1083681567}
   isDialogueFinished: 0
   audioNarration: []
-  audioInPlay: {fileID: 2074013901}
+  audioInPlay: {fileID: 68937083}
   answerChecker: {fileID: 0}
 --- !u!1 &232908572
 GameObject:
@@ -361,18 +490,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
-  - In this situation, only luck can be of help. The floor underneath you collapses
-    because the new tunnels built below the castle are still under construction.
-    You find yourselves running through their long and convoluted paths, while the
-    king is too busy shouting and cursing at the workers who caused this mishap.
-  - You and your daughter are safe for now. You finally escaped the treacherous king.
-    You decide this can never happen again. If you put your mind to it, you can have
-    your revenge for all the humiliation during your stay at the castle. You can
-    even take his place and rule the land. But you need to take care of a few things
-    before you're ready to accomplish that.
-  sounds:
-  - {fileID: 8300000, guid: 7c0b7fad64f64104ab2040c901f6edac, type: 3}
-  - {fileID: 8300000, guid: cf913644e964b6846b42970a757e8634, type: 3}
+  - 'You pull out a deck of cards and look at him challengingly. With a cunning smirk,
+    you tell him your offer: You are going to bet all your money for two satchels
+    of gold coins. You spot the reluctance and fear in his eyes, so you decide to
+    make the offer even more
+
+    enticing.'
+  - "In the corner of your eye, you spot an old merchant.\nYou go to greet him and
+    see his limited supply of fresh stock displayed on his small, old, rusty cart.
+    He doesn't have much\u2014that much is obvious\u2014and yet, you do need coins.
+    You start scheming and thinking..."
+  - Shock pierces your heart as you gaze at the old merchant while he laughs with
+    happiness, collecting the ring and money you wagered. You slump in anger and
+    sorrow. You consider attacking him, but the guards are eyeing you in suspicion.
+    You back away, slumped in defeat...
+  sounds: []
   isQuestion: 0
 --- !u!1 &330585543
 GameObject:
@@ -1111,12 +1243,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
-  - You put on a sly fake smile and try to convince the king your daughter isn't
-    good enough for him. He's flattered by your comments and says he's had worse,
-    and he doesn't have any issues with her.
-  - He takes her for the night, and the next morning you find out her despair and
-    newly developed hatred for you caused her to slit her wrists. You're not recovering
-    from that.
+  - You pant from the scorching sun. Your muscular forearms brush the sweat off your
+    forehead, your veins pop out. You start talking about how hot the weather is
+    in a sultry tone.
+  - You gasp and moan as you take your woolen sweatshirt off, leaving you with nothing
+    but a torn-out dress shirt, slightly transparent by your sweat, revealing your
+    toned muscles.
+  - You then lean forward on his cart and start offering the old man your services,
+    promising him a good, strong "laborer" for a bit of coin and a place to spend
+    the night. You bat your eyelashes and let out a soft giggle.
+  - You make empty promises about making his ordinary life interesting and making
+    him feel young again. However, all you can see in his eyes is disgust. He then
+    kindly asks you to leave his cart and never speak to him again, or else he would
+    call the guards.
   sounds: []
   isQuestion: 0
 --- !u!1 &1083681565
@@ -1164,28 +1303,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
-  - Far away, in a distant land, resides a kingdom with a cruel man sitting on the
-    throne. The vicious king rules with great selfishness, and only spares a thought
-    for himself. As his right-hand man, you've endured years of suffering under the
-    weight of his thumb.
-  - Through all this time, you remained loyal and served as best you could to make
-    a life for yourself and your family. One fateful day, your presence is demanded
-    in the throne room. There, the king awaits, and kneeling in front of him is your
-    disturbed daughter.
-  - Her slight inclination to the right makes obvious the expected position you are
-    to take. With your most precious by your side, you kneel down in anticipation
-    of the snake's request.
-  - 'The king asks, you to lend him your daughter for one night, as it is a great
-    honor for a non-noble woman to lay with a nobleman. He remarks that he will greatly
-    compensate both of your efforts.
-
-    Your body floods with emotion. What will
-    you do?'
+  - "Having just escaped from the unfortunate situation, you stroll through the Sunday
+    market. Church bells clash in the distance, kids laugh and play around you, but
+    all you see is the corruption that lies underneath the sunshine and happiness\u2014the
+    darkness and corruption that has consumed this godforsaken village. But you don't
+    mind. You are used to playing in the dark."
+  - "In the corner of your eye, you spot an old merchant.\nYou go to greet him and
+    see his limited supply of fresh stock displayed on his small, old, rusty cart.
+    He doesn't have much\u2014that much is obvious\u2014and yet, you do need coins.
+    You start scheming and thinking..."
   sounds:
-  - {fileID: 8300000, guid: 73992a6a8b2330548b691f631a48a349, type: 3}
-  - {fileID: 8300000, guid: 3072435fa1a66f345bd4b7fbf1b383c8, type: 3}
-  - {fileID: 8300000, guid: 3a53cf38c46b8354c8d81b394ec9e717, type: 3}
-  - {fileID: 8300000, guid: f0a213081337d2440a85c677ffb818e9, type: 3}
+  - {fileID: 8300000, guid: 3d16099cb9879c046813cdc6efac4fd8, type: 3}
+  - {fileID: 8300000, guid: 451f68cb02f3e1e46a6d9eb6281ddc4e, type: 3}
   isQuestion: 0
 --- !u!4 &1180359985 stripped
 Transform:
@@ -1274,11 +1403,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
-  - Your body can't take this exhilarating rage anymore. You lunge at the king with
-    full force and full intent of murder, but the guards are faster than you. You
-    get impaled by their spears from all sides.
-  sounds:
-  - {fileID: 0}
+  - You lunge at the helpless old man. You knock him out, spilling his golden coins
+    all over the ground. The guards surrounding the market immediately charge at
+    you. You hastily pick the coins up and turn your tail. You run and run, but it's
+    hopeless. The crowd is far too dense for you to make an escape. You get caught,
+    convicted of your crimes.
+  - You find yourself with your hand stuck between the wooden planks of a makeshift
+    guillotine. Every moment feels like eternity... But then, in an instant, the
+    blade falls, and so does your arm... Finally, with a short nub in place of your
+    hand, you get thrown out of the castle and wander as a nomad, alone and outcast
+    by society
+  sounds: []
   isQuestion: 0
 --- !u!1 &1425676523
 GameObject:
@@ -1325,11 +1460,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
-  - You decide you're gonna try and lie your way out of this situation, but no matter
-    what, you are both already there in front of the king. There's not much you can
-    do. At the end of your pathetic attempts to trick him, he still has his way with
-    your daughter, and you're punished with 20 lashes for trying to disobey orders.
-  sounds: []
+  - Your heart aches with guilt, but you remember you have an obscure, worthless
+    trinket. A trinket so bright and shiny... It could easily deceive the old man.
+    You show him the shiny trinket and flail it before his face.
+  - With a seemingly innocent grin, you start explaining its history; how it has
+    been a castle heirloom for centuries; how it was acquired by the first king in
+    the lineage. You offer it to him for a high price, a price you know he can't
+    afford.
+  - You see the hesitation when the old man refuses the offer, clearly interested
+    in the trinket. You then put on a sly act. You say that if he trades you his
+    freshest, juiciest apples, you will give it to him for around half the price.
+    He instantly jerks his head into a nod.
+  - 'Despite the guilt boiling inside you, you sell him the trinket. Not only did
+    you get more gold coins than you can reasonably spend, you also got lunch...
+
+    You
+    walk away, feeling at fault and embarrassed... but most of all... you feel richer.'
+  sounds:
+  - {fileID: 8300000, guid: f097788a26eb65a4baaa59bb8517cc14, type: 3}
+  - {fileID: 8300000, guid: 682bc2543cf31a341999e8f80d8c083b, type: 3}
+  - {fileID: 8300000, guid: b4917ea2d1723b74bb9ea4a8e15dba7c, type: 3}
+  - {fileID: 8300000, guid: 0d6e65d32c8493641a76b07a3784641c, type: 3}
   isQuestion: 0
 --- !u!1 &1499563166
 GameObject:
@@ -1464,6 +1615,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499563166}
   m_CullTransparentMesh: 1
+--- !u!1001 &1560680017
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 249150925622268775, guid: cf856591953c8ed4bad3e9d863896e12, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 8.808506
+      objectReference: {fileID: 0}
+    - target: {fileID: 249150925622268775, guid: cf856591953c8ed4bad3e9d863896e12, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 8.808506
+      objectReference: {fileID: 0}
+    - target: {fileID: 249150925622268775, guid: cf856591953c8ed4bad3e9d863896e12, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 8.808506
+      objectReference: {fileID: 0}
+    - target: {fileID: 249150925622268775, guid: cf856591953c8ed4bad3e9d863896e12, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 249150925622268775, guid: cf856591953c8ed4bad3e9d863896e12, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 249150925622268775, guid: cf856591953c8ed4bad3e9d863896e12, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -11.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 249150925622268775, guid: cf856591953c8ed4bad3e9d863896e12, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 249150925622268775, guid: cf856591953c8ed4bad3e9d863896e12, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 249150925622268775, guid: cf856591953c8ed4bad3e9d863896e12, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 249150925622268775, guid: cf856591953c8ed4bad3e9d863896e12, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 249150925622268775, guid: cf856591953c8ed4bad3e9d863896e12, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 249150925622268775, guid: cf856591953c8ed4bad3e9d863896e12, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 249150925622268775, guid: cf856591953c8ed4bad3e9d863896e12, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 594186936958880221, guid: cf856591953c8ed4bad3e9d863896e12, type: 3}
+      propertyPath: m_Name
+      value: CardTable
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cf856591953c8ed4bad3e9d863896e12, type: 3}
 --- !u!1 &1743141466
 GameObject:
   m_ObjectHideFlags: 0
@@ -1814,75 +2034,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1782665642}
   m_CullTransparentMesh: 1
---- !u!1001 &1846181048
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1300071142533208, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
-      propertyPath: m_Name
-      value: Chaise_HP_t1_F_2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 7.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
 --- !u!1 &1988529794
 GameObject:
   m_ObjectHideFlags: 0
@@ -1928,140 +2079,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
-  - Do you really think you can ever have enough money to convince the king to not
-    do something he's set out to do? He laughs at you, and you're demoted to court
-    jester for being such a hilarious laughingstock.
+  - All of your schemes are forgotten as soon as you set your eyes on the display
+    of fresh, luscious, juicy, plump, ripe, bright-red, spotless, crisp, picturesque,
+    delicate, immaculate, succulent apples.
+  - You start drooling like a hungry hound. Your body starts moving on its own. Your
+    hands start reaching into the deepest parts of yourself... Your pockets. You
+    buy the entire stock and are left with nothing but apples. Now you wander the
+    streets, without a single coin on you.
   sounds: []
   isQuestion: 0
---- !u!1 &2074013900
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2074013902}
-  - component: {fileID: 2074013901}
-  m_Layer: 0
-  m_Name: Audio Source
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!82 &2074013901
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2074013900}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!4 &2074013902
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2074013900}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.210407, y: 3.6594806, z: -10.936937}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &338163550487701170
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2396,7 +2422,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ea479496244863747953ffcf23cf8773, type: 2}
+  - {fileID: 2100000, guid: 2fabec44ff55be8408701db5943af2ad, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3403,5 +3429,5 @@ SceneRoots:
   - {fileID: 814302899}
   - {fileID: 1310360180}
   - {fileID: 8806903230230499956}
-  - {fileID: 2074013902}
-  - {fileID: 1846181048}
+  - {fileID: 68937084}
+  - {fileID: 1560680017}
