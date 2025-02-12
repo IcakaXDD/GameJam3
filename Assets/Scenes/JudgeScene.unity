@@ -315,6 +315,82 @@ MonoBehaviour:
   isDialogueFinished: 0
   audioNarration: []
   audioInPlay: {fileID: 2074013901}
+  answerChecker: {fileID: 0}
+--- !u!1 &183485314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 183485315}
+  - component: {fileID: 183485317}
+  - component: {fileID: 183485316}
+  m_Layer: 5
+  m_Name: Border
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &183485315
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183485314}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1743141467}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &183485316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183485314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &183485317
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183485314}
+  m_CullTransparentMesh: 1
 --- !u!1 &232908572
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,6 +453,7 @@ MonoBehaviour:
     captured and are soon beheaded by the King, prosecuted by the same judge you
     tried to manipulate...
   sounds: []
+  isQuestion: 0
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1205,6 +1282,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f6a3aab1dd9715c448d0d019cc9a4db3, type: 3}
   - {fileID: 8300000, guid: 00d555c72f9491e439900b826e5eded3, type: 3}
   - {fileID: 8300000, guid: 3847a67e675bd26449130afd22c3e5c9, type: 3}
+  isQuestion: 0
 --- !u!1 &1083681565
 GameObject:
   m_ObjectHideFlags: 0
@@ -1272,6 +1350,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a35314b9769e5274aaa12e8a159581ca, type: 3}
   - {fileID: 8300000, guid: 9ff88b0e5c78b1e43b2c20a62688de78, type: 3}
   - {fileID: 8300000, guid: e766acdaa66800045876a2f5d678efbe, type: 3}
+  isQuestion: 0
 --- !u!4 &1180359985 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8607912437448045643, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
@@ -1369,6 +1448,7 @@ MonoBehaviour:
     daughter from him, thus disobeying his commands. Your head hits the cold pavement,
     and the crowd cheers the name of the snake that took everything from you.
   sounds: []
+  isQuestion: 0
 --- !u!1 &1425676523
 GameObject:
   m_ObjectHideFlags: 0
@@ -1428,6 +1508,7 @@ MonoBehaviour:
   - The people were not pleased with the act, and you were left standing there, losing
     all your chances to gain legitimate power.
   sounds: []
+  isQuestion: 0
 --- !u!1 &1499563166
 GameObject:
   m_ObjectHideFlags: 0
@@ -1592,6 +1673,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 488684400}
+  - {fileID: 183485315}
   m_Father: {fileID: 814302899}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1966,6 +2048,7 @@ MonoBehaviour:
   - You feel two sets of hands grab your hands behind your back. The guards! You're
     executed for being insane. Good job!
   sounds: []
+  isQuestion: 0
 --- !u!1 &2074013900
 GameObject:
   m_ObjectHideFlags: 0
