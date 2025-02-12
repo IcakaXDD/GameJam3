@@ -315,6 +315,7 @@ MonoBehaviour:
   isDialogueFinished: 0
   audioNarration: []
   audioInPlay: {fileID: 1277810975}
+  answerChecker: {fileID: 0}
 --- !u!1 &232908572
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,6 +380,7 @@ MonoBehaviour:
     short, grizzly "ribbits." You've been turned into... AN UGLY FROG. NOT EVEN ONE
     OF THE BETTER-LOOKING FROGS.
   sounds: []
+  isQuestion: 0
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,6 +1133,7 @@ MonoBehaviour:
     during your slumber. When morning comes, you find yourself alone in her bed,
     with all your possessions gone. She used you and gave you nothing in return...
   sounds: []
+  isQuestion: 0
 --- !u!1 &1083681565
 GameObject:
   m_ObjectHideFlags: 0
@@ -1194,6 +1197,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6194de1fe043b754896a847adfed2e31, type: 3}
   - {fileID: 8300000, guid: 3c0ab2e7575c9374fa16dd5bc2b70baf, type: 3}
   - {fileID: 8300000, guid: 0d0ea8d7366bf0e428e0574a755daadd, type: 3}
+  isQuestion: 0
 --- !u!4 &1180359985 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8607912437448045643, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
@@ -1423,6 +1427,7 @@ MonoBehaviour:
     sinful life and run away with your daughter into the wilderness, away from all
     the madness.
   sounds: []
+  isQuestion: 0
 --- !u!1 &1425676523
 GameObject:
   m_ObjectHideFlags: 0
@@ -1488,6 +1493,7 @@ MonoBehaviour:
     her words. Your journey ends, and your soul is consumed by fear for your entire
     life of what else the curse could entail.
   sounds: []
+  isQuestion: 0
 --- !u!1 &1499563166
 GameObject:
   m_ObjectHideFlags: 0
@@ -1971,6 +1977,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1782665642}
   m_CullTransparentMesh: 1
+--- !u!1001 &1832100631
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1300071142533208, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_Name
+      value: Chaise_HP_t1_F_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370203433151424, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0c7407aeb95d8e540889ab248886e69d, type: 3}
 --- !u!1 &1988529794
 GameObject:
   m_ObjectHideFlags: 0
@@ -2031,6 +2106,7 @@ MonoBehaviour:
   sounds:
   - {fileID: 8300000, guid: ce2bb746dbe9d354ca7733cffa458bbc, type: 3}
   - {fileID: 8300000, guid: 1281f872fd8ff3e478f1113f6c2059c8, type: 3}
+  isQuestion: 0
 --- !u!64 &338163550487701170
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2987,7 +3063,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8607912437448045643, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.51
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 8607912437448045643, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3373,3 +3449,4 @@ SceneRoots:
   - {fileID: 1310360180}
   - {fileID: 8806903230230499956}
   - {fileID: 1277810976}
+  - {fileID: 1832100631}
