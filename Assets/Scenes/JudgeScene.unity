@@ -312,6 +312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 488684401}
   dialogue: {fileID: 1083681567}
+  isDialogueFinished: 0
   audioNarration: []
   audioInPlay: {fileID: 0}
 --- !u!1 &232908572
@@ -1248,7 +1249,7 @@ GameObject:
   - component: {fileID: 1343862996}
   - component: {fileID: 1343862997}
   m_Layer: 0
-  m_Name: Action Dialogue
+  m_Name: Confront Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
