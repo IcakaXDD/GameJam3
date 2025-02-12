@@ -1310,7 +1310,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a35314b9769e5274aaa12e8a159581ca, type: 3}
   - {fileID: 8300000, guid: 9ff88b0e5c78b1e43b2c20a62688de78, type: 3}
   - {fileID: 8300000, guid: e766acdaa66800045876a2f5d678efbe, type: 3}
-  isQuestion: 0
+  isQuestion: 1
 --- !u!1001 &1089182034
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -2021,7 +2021,7 @@ MonoBehaviour:
   sounds:
   - {fileID: 8300000, guid: 3d16099cb9879c046813cdc6efac4fd8, type: 3}
   - {fileID: 8300000, guid: 451f68cb02f3e1e46a6d9eb6281ddc4e, type: 3}
-  isQuestion: 0
+  isQuestion: 1
 --- !u!1 &1310360179
 GameObject:
   m_ObjectHideFlags: 0
