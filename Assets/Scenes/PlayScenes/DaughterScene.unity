@@ -1506,7 +1506,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3072435fa1a66f345bd4b7fbf1b383c8, type: 3}
   - {fileID: 8300000, guid: 3a53cf38c46b8354c8d81b394ec9e717, type: 3}
   - {fileID: 8300000, guid: f0a213081337d2440a85c677ffb818e9, type: 3}
-  isQuestion: 0
+  isQuestion: 1
 --- !u!1 &1310360179
 GameObject:
   m_ObjectHideFlags: 0

@@ -1764,7 +1764,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6194de1fe043b754896a847adfed2e31, type: 3}
   - {fileID: 8300000, guid: 3c0ab2e7575c9374fa16dd5bc2b70baf, type: 3}
   - {fileID: 8300000, guid: 0d0ea8d7366bf0e428e0574a755daadd, type: 3}
-  isQuestion: 0
+  isQuestion: 1
 --- !u!1 &1123956048
 GameObject:
   m_ObjectHideFlags: 0
