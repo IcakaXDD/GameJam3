@@ -11,7 +11,7 @@ public class DialogueManager : MonoBehaviour
     public Dialogue dialogue;
     public Queue<string> sentences;
 
-
+    public bool isDialogueFinished = false;
     public List<AudioClip> audioNarration;
     private int audioNumber=0;
     public AudioSource audioInPlay;
@@ -19,26 +19,25 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         sentences = new Queue<string>();
-        TriggerDialoge();
+        StartDialogue(dialogue);
         
     }
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            audioNumber++;
-            DisplayNextSentence();
-            
+            if (!isDialogueFinished)
+            {
+                audioNumber++;
+                DisplayNextSentence();
+            } 
         }
     }
-    public void TriggerDialoge()
-    {
-        StartDialogue(dialogue);
-    }
+    
     public void StartDialogue(Dialogue dialogue)
     {
         Debug.Log("Starting conversation");
-
+        isDialogueFinished = false;
         sentences.Clear();
         audioNarration.Clear();
 
@@ -54,26 +53,26 @@ public class DialogueManager : MonoBehaviour
     }
 
     public void DisplayNextSentence()
-    {
-        if (sentences.Count == 0)
-        {
-            EndDialogue();
-            return;
-        }
+    {    
 
         string sentence = sentences.Dequeue();
-        
         
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
         audioInPlay.clip = audioNarration[audioNumber];
         audioInPlay.Play();
+        if (sentences.Count == 0)
+        {
+            EndDialogue();
+            return;
+        }
     }
 
     public void EndDialogue()
     {
         Debug.Log("EndConvo");
         audioNumber = 0;
+        isDialogueFinished= true;
     }
     IEnumerator TypeSentence(string sentence)
     {
