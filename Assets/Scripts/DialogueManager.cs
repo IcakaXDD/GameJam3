@@ -79,11 +79,7 @@ public class DialogueManager : MonoBehaviour
         
         if (!dialogue.isQuestion)
         {
-            while (audioInPlay.isPlaying)
-            {
-                
-            }
-            answerChecker.CheckAnswer();
+            StartCoroutine(CheckForPlayingSound());
         }
     }
     IEnumerator TypeSentence(string sentence)
@@ -92,7 +88,15 @@ public class DialogueManager : MonoBehaviour
         foreach(char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.005f);
         }
+    }
+    IEnumerator CheckForPlayingSound()
+    {
+        while (audioInPlay.isPlaying)
+        {
+            yield return null;
+        }
+        answerChecker.CheckAnswer();
     }
 }
