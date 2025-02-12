@@ -8,8 +8,11 @@ public class CardManager : MonoBehaviour
     public DialogueManager dialogueManager;    
     public int cardID;
 
+    public AnswerChecker answerChecker;
+
     private void OnMouseDown()
     {
+        answerChecker.answeredCard = cardID;
         if (dialogueManager.isDialogueFinished)
         {
             dialogueManager.StartDialogue(dialogue[level]);
