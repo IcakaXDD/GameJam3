@@ -3,11 +3,19 @@ using UnityEngine;
 
 public class AnswerChecker : MonoBehaviour
 {
-    [SerializeField] List<CardManager> cards;
-    [SerializeField] List<int> levelAnswerCard;
-    // Update is called once per frame
-    void Update()
-    {
+    [SerializeField] CardManager cardManager;
+    [SerializeField] int rightCardId;
 
+    public void CheckAnswer()
+    {
+        if(cardManager.cardID == rightCardId)
+        {
+            //load next scene
+        }
+        else
+        {
+            // UI Game over
+        }
     }
+    
 }
