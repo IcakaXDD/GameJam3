@@ -62,8 +62,11 @@ public class DialogueManager : MonoBehaviour
         
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
-        audioInPlay.clip = audioNarration[audioNumber];
-        audioInPlay.Play();
+        if (audioNarration.Count > 0)
+        {
+            audioInPlay.clip = audioNarration[audioNumber];
+            audioInPlay.Play();
+        }
         if (sentences.Count == 0)
         {
             EndDialogue();
