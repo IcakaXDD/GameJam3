@@ -419,12 +419,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f0274919c92be74da70201bedec2c19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueText: {fileID: 0}
+  dialogueText: {fileID: 1832619234}
   dialogue: {fileID: 1083681567}
   isDialogueFinished: 0
   audioNarration: []
   audioInPlay: {fileID: 2074013901}
-  answerChecker: {fileID: 0}
+  answerChecker: {fileID: 433738563}
 --- !u!1 &232908572
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,6 +788,52 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &433738562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 433738564}
+  - component: {fileID: 433738563}
+  m_Layer: 0
+  m_Name: AnswerChecker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &433738563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433738562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a0109d37e6ff8e40ae34fdc24a0a13d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answeredCard: 0
+  rightCardId: 1
+--- !u!4 &433738564
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433738562}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.20768024, y: 8.624414, z: -9.714276}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1592,8 +1638,7 @@ MonoBehaviour:
   - Your body can't take this exhilarating rage anymore. You lunge at the king with
     full force and full intent of murder, but the guards are faster than you. You
     get impaled by their spears from all sides.
-  sounds:
-  - {fileID: 0}
+  sounds: []
   isQuestion: 0
 --- !u!1 &1381763562
 GameObject:
@@ -2261,10 +2306,58 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hand
       objectReference: {fileID: 0}
+    - target: {fileID: 937297218504298700, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: answerChecker
+      value: 
+      objectReference: {fileID: 433738563}
+    - target: {fileID: 937297218504298700, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 130743056}
+    - target: {fileID: 937297218504298700, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 937297218504298700, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: 'dialogue.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1343862997}
     - target: {fileID: 1548914908331703027, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: handPrefab
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1664924552328017831, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: answerChecker
+      value: 
+      objectReference: {fileID: 433738563}
+    - target: {fileID: 1664924552328017831, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 130743056}
+    - target: {fileID: 1664924552328017831, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664924552328017831, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: 'dialogue.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1082691068}
+    - target: {fileID: 2952006107331775629, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: answerChecker
+      value: 
+      objectReference: {fileID: 433738563}
+    - target: {fileID: 2952006107331775629, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 130743056}
+    - target: {fileID: 2952006107331775629, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2952006107331775629, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: 'dialogue.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1425676525}
     - target: {fileID: 3621366037247751064, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -2273,6 +2366,26 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 0056dc58d440aa14f89ec4ee8980c152, type: 2}
+    - target: {fileID: 4072393614217117907, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: cardID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4072393614217117907, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: answerChecker
+      value: 
+      objectReference: {fileID: 433738563}
+    - target: {fileID: 4072393614217117907, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 130743056}
+    - target: {fileID: 4072393614217117907, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4072393614217117907, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: 'dialogue.Array.data[0]'
+      value: 
+      objectReference: {fileID: 232908574}
     - target: {fileID: 5274001466741968285, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.05298514
@@ -2373,6 +2486,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 7669269751350471365, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: answerChecker
+      value: 
+      objectReference: {fileID: 433738563}
+    - target: {fileID: 7669269751350471365, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 130743056}
+    - target: {fileID: 7669269751350471365, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7669269751350471365, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: 'dialogue.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1988529796}
     - target: {fileID: 8497265217425960404, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -2849,3 +2978,4 @@ SceneRoots:
   - {fileID: 467658257}
   - {fileID: 444509772}
   - {fileID: 885482789}
+  - {fileID: 433738564}
