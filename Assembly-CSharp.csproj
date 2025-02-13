@@ -68,6 +68,7 @@
     <Compile Include="Assets\_ExternalAssets\Package\KingScript.cs" />
     <Compile Include="Assets\_ExternalAssets\Package\CardsAnimation.cs" />
     <Compile Include="Assets\FinalAnimationTrigger.cs" />
+    <Compile Include="Assets\LivesManager.cs" />
     <Compile Include="Assets\Scripts\Dialogue.cs" />
     <Compile Include="Assets\Scripts\DialogueTrigger.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />

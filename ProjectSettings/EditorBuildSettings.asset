@@ -26,6 +26,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PlayScenes/KingScene.unity
     guid: ebd1f1c20c5979f42b5405ea273afa68
+  - enabled: 1
+    path: Assets/Scenes/PlayScenes/GameOver.unity
+    guid: 82fdf4ca85b2d924ebf7bcf2c94576da
+  - enabled: 1
+    path: Assets/Scenes/PlayScenes/TitleScreen.unity
+    guid: 074f9cdffe9586e4f905928ba6edec09
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
