@@ -703,7 +703,12 @@ MonoBehaviour:
     happiness, collecting the ring and money you wagered. You slump in anger and
     sorrow. You consider attacking him, but the guards are eyeing you in suspicion.
     You back away, slumped in defeat...
-  sounds: []
+  - YOU FAILED
+  sounds:
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!1 &271944013
 GameObject:
@@ -2206,7 +2211,13 @@ MonoBehaviour:
     him feel young again. However, all you can see in his eyes is disgust. He then
     kindly asks you to leave his cart and never speak to him again, or else he would
     call the guards.
-  sounds: []
+  - YOU FAILED
+  sounds:
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!1 &1083681565
 GameObject:
@@ -2358,7 +2369,11 @@ MonoBehaviour:
     blade falls, and so does your arm... Finally, with a short nub in place of your
     hand, you get thrown out of the castle and wander as a nomad, alone and outcast
     by society
-  sounds: []
+  - YOU FAILED
+  sounds:
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!1 &1399705154
 GameObject:
@@ -2530,11 +2545,13 @@ MonoBehaviour:
 
     You
     walk away, feeling at fault and embarrassed... but most of all... you feel richer.'
+  - SUCCESS
   sounds:
   - {fileID: 8300000, guid: f097788a26eb65a4baaa59bb8517cc14, type: 3}
   - {fileID: 8300000, guid: 682bc2543cf31a341999e8f80d8c083b, type: 3}
   - {fileID: 8300000, guid: b4917ea2d1723b74bb9ea4a8e15dba7c, type: 3}
   - {fileID: 8300000, guid: 0d6e65d32c8493641a76b07a3784641c, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!1 &1499563166
 GameObject:
@@ -3098,7 +3115,11 @@ MonoBehaviour:
     hands start reaching into the deepest parts of yourself... Your pockets. You
     buy the entire stock and are left with nothing but apples. Now you wander the
     streets, without a single coin on you.
-  sounds: []
+  - YOU FAILED
+  sounds:
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

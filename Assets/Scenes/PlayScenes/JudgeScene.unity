@@ -452,7 +452,13 @@ MonoBehaviour:
   - Not only that, you soon realize that the guards have you surrounded. You get
     captured and are soon beheaded by the King, prosecuted by the same judge you
     tried to manipulate...
-  sounds: []
+  - YOU FAILED
+  sounds:
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!1 &366989406
 GameObject:
@@ -1413,11 +1419,13 @@ MonoBehaviour:
   - Then, you sneakily suggest you could take on the workload the dad has and send
     them a percentage of the earnings. The heavily emotional dad nods and gives you
     his job-affirming document. Congratulations! You've become a powerful judge now.
+  - SUCCESS
   sounds:
   - {fileID: 8300000, guid: 5b8c6e319c25e6942aee2d3c27d56308, type: 3}
   - {fileID: 8300000, guid: f6a3aab1dd9715c448d0d019cc9a4db3, type: 3}
   - {fileID: 8300000, guid: 00d555c72f9491e439900b826e5eded3, type: 3}
   - {fileID: 8300000, guid: 3847a67e675bd26449130afd22c3e5c9, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!1 &1083681565
 GameObject:
@@ -1930,7 +1938,12 @@ MonoBehaviour:
   - He beheads you for running away from your palace duties and hiding away your
     daughter from him, thus disobeying his commands. Your head hits the cold pavement,
     and the crowd cheers the name of the snake that took everything from you.
-  sounds: []
+  - YOU FAILED
+  sounds:
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!1 &1369518474
 GameObject:
@@ -2111,7 +2124,13 @@ MonoBehaviour:
     and obnoxious.
   - The people were not pleased with the act, and you were left standing there, losing
     all your chances to gain legitimate power.
-  sounds: []
+  - YOU FAILED
+  sounds:
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!1 &1499563166
 GameObject:
@@ -2983,7 +3002,12 @@ MonoBehaviour:
     as a whole. You start backing away.
   - You feel two sets of hands grab your hands behind your back. The guards! You're
     executed for being insane. Good job!
-  sounds: []
+  - YOU FAILED
+  sounds:
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!1 &2074013900
 GameObject:

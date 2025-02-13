@@ -693,7 +693,14 @@ MonoBehaviour:
     dilating. After one torturous minute, all you can do is jump around and let out
     short, grizzly "ribbits." You've been turned into... AN UGLY FROG. NOT EVEN ONE
     OF THE BETTER-LOOKING FROGS.
-  sounds: []
+  - YOU FAILED
+  sounds:
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!1 &379683665
 GameObject:
@@ -1779,7 +1786,13 @@ MonoBehaviour:
   - You spend the night together, too inebriated to feel her slip out of the tent
     during your slumber. When morning comes, you find yourself alone in her bed,
     with all your possessions gone. She used you and gave you nothing in return...
-  sounds: []
+  - YOU FAILED
+  sounds:
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!1 &1083681565
 GameObject:
@@ -2143,7 +2156,12 @@ MonoBehaviour:
     you kill, you lie... Your journey comes to an end as you decide to leave this
     sinful life and run away with your daughter into the wilderness, away from all
     the madness.
-  sounds: []
+  - YOU FAILED
+  sounds:
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!1 &1425676523
 GameObject:
@@ -2209,7 +2227,14 @@ MonoBehaviour:
   - You can still feel the strange sensation you experienced, and you decide to heed
     her words. Your journey ends, and your soul is consumed by fear for your entire
     life of what else the curse could entail.
-  sounds: []
+  - YOU FAILED
+  sounds:
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!1 &1499563166
 GameObject:
@@ -3093,9 +3118,11 @@ MonoBehaviour:
 
     Without complaint, you head out, preparing your mind and body for
     the upcoming confrontation.'
+  - SUCCESS
   sounds:
   - {fileID: 8300000, guid: ce2bb746dbe9d354ca7733cffa458bbc, type: 3}
   - {fileID: 8300000, guid: 1281f872fd8ff3e478f1113f6c2059c8, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!1 &2057866138
 GameObject:

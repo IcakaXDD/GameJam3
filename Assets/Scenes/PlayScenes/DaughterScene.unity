@@ -479,9 +479,11 @@ MonoBehaviour:
     your revenge for all the humiliation during your stay at the castle. You can
     even take his place and rule the land. But you need to take care of a few things
     before you're ready to accomplish that.
+  - SUCCESS
   sounds:
   - {fileID: 8300000, guid: 7c0b7fad64f64104ab2040c901f6edac, type: 3}
   - {fileID: 8300000, guid: cf913644e964b6846b42970a757e8634, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!1 &241820619
 GameObject:
@@ -1460,7 +1462,11 @@ MonoBehaviour:
   - He takes her for the night, and the next morning you find out her despair and
     newly developed hatred for you caused her to slit her wrists. You're not recovering
     from that.
-  sounds: []
+  - YOU FAILED
+  sounds:
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!1 &1083681565
 GameObject:
@@ -1615,7 +1621,10 @@ MonoBehaviour:
   - Your body can't take this exhilarating rage anymore. You lunge at the king with
     full force and full intent of murder, but the guards are faster than you. You
     get impaled by their spears from all sides.
-  sounds: []
+  - YOU FAILED
+  sounds:
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!1 &1381763562
 GameObject:
@@ -1741,7 +1750,10 @@ MonoBehaviour:
     what, you are both already there in front of the king. There's not much you can
     do. At the end of your pathetic attempts to trick him, he still has his way with
     your daughter, and you're punished with 20 lashes for trying to disobey orders.
-  sounds: []
+  - YOU FAILED
+  sounds:
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!1 &1499563166
 GameObject:
@@ -2813,7 +2825,10 @@ MonoBehaviour:
   - Do you really think you can ever have enough money to convince the king to not
     do something he's set out to do? He laughs at you, and you're demoted to court
     jester for being such a hilarious laughingstock.
-  sounds: []
+  - YOU FAILED
+  sounds:
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!1 &2074013900
 GameObject:

@@ -1291,6 +1291,10 @@ PrefabInstance:
       propertyPath: 'dialogue.Array.data[0]'
       value: 
       objectReference: {fileID: 1425676525}
+    - target: {fileID: 2647473066786201710, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2952006107331775629, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: cardID
       value: 5
@@ -1497,11 +1501,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8607912437448045643, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.61
+      value: 5.45
       objectReference: {fileID: 0}
     - target: {fileID: 8607912437448045643, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.15
+      value: -3.85
       objectReference: {fileID: 0}
     - target: {fileID: 8607912437448045643, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1509,19 +1513,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8607912437448045643, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9693098
+      value: 0.9534844
       objectReference: {fileID: 0}
     - target: {fileID: 8607912437448045643, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.00000044703478
+      value: -0.0000006556511
       objectReference: {fileID: 0}
     - target: {fileID: 8607912437448045643, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0000010132788
+      value: -0.0000015497208
       objectReference: {fileID: 0}
     - target: {fileID: 8607912437448045643, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.24584237
+      value: -0.3014424
       objectReference: {fileID: 0}
     - target: {fileID: 8607912437448045643, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1533,7 +1537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8607912437448045643, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -28.463
+      value: -35.089
       objectReference: {fileID: 0}
     - target: {fileID: 8607912437448045643, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -1872,9 +1876,10 @@ MonoBehaviour:
   - "You press it to the King's neck, and as he begs for mercy, you remind him of
     all the times he humiliated you\u2014especially when he disrespected your daughter
     and tried playing with her like a doll."
-  - You slice, and crimson liquid covers everything surrounding you, including yourself.
+  - 'You slice, and crimson liquid covers everything surrounding you, including yourself.
     You strip the lifeless body before you of its crown and put it on your own head.
-    Sitting on the throne, you smile.
+    Sitting on the throne, you smile. '
+  - '*A choice presents itself in the palms of my hands.*'
   sounds:
   - {fileID: 8300000, guid: 40e77ded04e5b8742a2a7c0347c1da87, type: 3}
   - {fileID: 8300000, guid: c90fe1386216ce44388db1b1fbbec48d, type: 3}
@@ -1883,6 +1888,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: cd5c01dbe64e7f54fa388e8aa5871b64, type: 3}
   - {fileID: 8300000, guid: 096f23eca92610e4f903dcf4905f0f68, type: 3}
   - {fileID: 8300000, guid: a14cca2068b9db5459709ae332397456, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 1
 --- !u!1 &1123956048
 GameObject:
@@ -2173,8 +2179,10 @@ MonoBehaviour:
   - You have everything you could ever want now, and you'll give your daughter the
     best life she can possibly have. You will rule like no other king. You'll be
     selfless and kind, and you will always take care of everyone in your kingdom.
+  - CONGRATS
   sounds:
   - {fileID: 8300000, guid: 326cd5b7789fa55499aaf4e95a3d9045, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!1 &1425676523
 GameObject:
@@ -2226,8 +2234,10 @@ MonoBehaviour:
     of the good comes with all of the evil. In order to rule and ensure a perfect
     life for your daughter, you must follow in the footsteps of kings before you.
     You must be ruthless.
+  - UNCONGRATS
   sounds:
   - {fileID: 8300000, guid: b691bb72736caeb4680a73549a579e56, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!1 &1499563166
 GameObject:

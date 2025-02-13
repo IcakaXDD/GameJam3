@@ -371,7 +371,12 @@ MonoBehaviour:
   - You roll like an empty barrel with your ass out down the dusty market streets.
     Everyone is laughing at you. After humiliating yourself like this, you can never
     sit on the throne. Your life is over.
-  sounds: []
+  - YOU FAILED
+  sounds:
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!1001 &253596832
 PrefabInstance:
@@ -1439,7 +1444,12 @@ MonoBehaviour:
   - You decide to try out the bell, but nothing happens. Suddenly, you feel your
     pockets being lighter than they were a couple of seconds ago. The jester robbed
     you blind. With no resources, there's no hope for executing your plan.
-  sounds: []
+  - YOU FAILED
+  sounds:
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!1 &1083681565
 GameObject:
@@ -1679,9 +1689,11 @@ MonoBehaviour:
   - His pathetic pleas don't affect you in the slightest, and with one movement of
     your capable arms, you throw him in the mud where he belongs. You will be the
     future king, and no one shall disrespect that. You continue with your quest.
+  - SUCCESS
   sounds:
   - {fileID: 8300000, guid: 9c2ab322df2f8944ba53a47436025b78, type: 3}
   - {fileID: 8300000, guid: e03716412d362f74d9ebfa289ed1150b, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!1 &1425676523
 GameObject:
@@ -1733,7 +1745,11 @@ MonoBehaviour:
     body.
   - With one slick move he swindles all your money and you're left with nothing.
     There's no hope for executing your plan now.
-  sounds: []
+  - YOU FAILED
+  sounds:
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!1 &1499563166
 GameObject:
@@ -2400,7 +2416,11 @@ MonoBehaviour:
   - You decide to try out the bell, but nothing happens. You decide to wait. You
     wait and wait. Days pass. You starve because you no longer have money for food.
     You gave it all to the jester.
-  sounds: []
+  - YOU FAILED
+  sounds:
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
+  - {fileID: 8300000, guid: f1ceb934b958c9647b6abea85666c664, type: 3}
   isQuestion: 0
 --- !u!64 &338163550487701170
 MeshCollider:
