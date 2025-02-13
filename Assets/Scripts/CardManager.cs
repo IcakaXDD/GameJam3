@@ -7,9 +7,16 @@ public class CardManager : MonoBehaviour
     public List<Dialogue> dialogue;
     public DialogueManager dialogueManager;    
     public int cardID;
-
+    public GameObject textToEnable;
     public AnswerChecker answerChecker;
-
+    private void OnMouseEnter()
+    {
+        textToEnable.SetActive(true);
+    }
+    private void OnMouseExit()
+    {
+        textToEnable.SetActive(false);
+    }
     private void OnMouseDown()
     {
         answerChecker.answeredCard = cardID;

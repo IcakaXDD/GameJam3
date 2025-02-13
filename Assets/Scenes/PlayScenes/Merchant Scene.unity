@@ -1454,6 +1454,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2952006107331775629, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: textToEnable
+      value: 
+      objectReference: {fileID: 765228318}
+    - target: {fileID: 2952006107331775629, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: answerChecker
       value: 
       objectReference: {fileID: 185291903}
@@ -1681,6 +1685,11 @@ PrefabInstance:
 --- !u!4 &765228317 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8607912437448045643, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+  m_PrefabInstance: {fileID: 765228316}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &765228318 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8514920014287397786, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
   m_PrefabInstance: {fileID: 765228316}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &814302895
