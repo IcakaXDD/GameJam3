@@ -16,7 +16,6 @@ public class CardManager : MonoBehaviour
         if (dialogueManager.isDialogueFinished)
         {
             dialogueManager.StartDialogue(dialogue[level]);
-            level++;
         }
         
     }
