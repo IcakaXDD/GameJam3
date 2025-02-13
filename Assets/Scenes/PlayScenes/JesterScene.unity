@@ -473,6 +473,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   answeredCard: 0
   rightCardId: 1
+  sceneName: 
 --- !u!4 &319176189
 Transform:
   m_ObjectHideFlags: 0
@@ -2675,7 +2676,7 @@ PrefabInstance:
       objectReference: {fileID: 1988529796}
     - target: {fileID: 8607912437448045643, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.6
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8607912437448045643, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: m_LocalPosition.y
