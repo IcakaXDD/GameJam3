@@ -473,7 +473,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   answeredCard: 0
   rightCardId: 1
-  sceneName: 
+  sceneName: JudgeScene
 --- !u!4 &319176189
 Transform:
   m_ObjectHideFlags: 0

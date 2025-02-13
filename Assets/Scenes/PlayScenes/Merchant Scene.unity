@@ -628,7 +628,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   answeredCard: 0
   rightCardId: 1
-  sceneName: 
+  sceneName: JesterScene
 --- !u!4 &185291904
 Transform:
   m_ObjectHideFlags: 0

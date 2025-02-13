@@ -824,7 +824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   answeredCard: 0
   rightCardId: 1
-  sceneName: 
+  sceneName: Merchant Scene
 --- !u!4 &433738564
 Transform:
   m_ObjectHideFlags: 0

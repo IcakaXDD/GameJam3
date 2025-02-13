@@ -875,7 +875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   answeredCard: 0
   rightCardId: 1
-  sceneName: 
+  sceneName: WitchScene
 --- !u!4 &806312450
 Transform:
   m_ObjectHideFlags: 0

@@ -17,7 +17,7 @@ public class AnswerChecker : MonoBehaviour
         else if (answeredCard != rightCardId && lives > 0)
         {
             lives--;
-            SceneManager.LoadScene("sceneName");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         else
         {
