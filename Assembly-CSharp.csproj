@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\DetachChild.cs" />
     <Compile Include="Assets\Scripts\CardManager.cs" />
+    <Compile Include="Assets\ButtonManager.cs" />
     <Compile Include="Assets\Scripts\RefreshHand.cs" />
     <Compile Include="Assets\_ExternalAssets\Package\KingScript.cs" />
     <Compile Include="Assets\_ExternalAssets\Package\CardsAnimation.cs" />
