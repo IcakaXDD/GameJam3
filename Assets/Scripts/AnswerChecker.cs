@@ -7,22 +7,23 @@ public class AnswerChecker : MonoBehaviour
     [SerializeField]public int answeredCard;
     [SerializeField] int rightCardId;
     [SerializeField] string sceneName;
-    public static int lives = 3;
     public void CheckAnswer()
     {
-        if(answeredCard == rightCardId)
+        if (LivesManager.instance.lives <= 0)
+        {
+            LivesManager.instance.lives = 2; // Reset on game over
+            SceneManager.LoadScene("GameOver");
+            return;
+        }
+
+        if (answeredCard == rightCardId)
         {
             SceneManager.LoadScene(sceneName);
         }
-        else if (answeredCard != rightCardId && lives > 0)
-        {
-            lives--;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
         else
         {
-            lives = 3;
-            SceneManager.LoadScene("TitleScreen");
+            LivesManager.instance.lives--;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
     
