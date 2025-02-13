@@ -1251,6 +1251,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 937297218504298700, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: textToEnable
+      value: 
+      objectReference: {fileID: 1040984141}
+    - target: {fileID: 937297218504298700, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: answerChecker
       value: 
       objectReference: {fileID: 1653354361}
@@ -1275,6 +1279,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1664924552328017831, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: textToEnable
+      value: 
+      objectReference: {fileID: 1040984138}
+    - target: {fileID: 1664924552328017831, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: answerChecker
       value: 
       objectReference: {fileID: 1653354361}
@@ -1294,6 +1302,10 @@ PrefabInstance:
       propertyPath: cardID
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2952006107331775629, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: textToEnable
+      value: 
+      objectReference: {fileID: 1040984142}
     - target: {fileID: 2952006107331775629, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: answerChecker
       value: 
@@ -1322,6 +1334,10 @@ PrefabInstance:
       propertyPath: cardID
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4072393614217117907, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: textToEnable
+      value: 
+      objectReference: {fileID: 1040984140}
     - target: {fileID: 4072393614217117907, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: answerChecker
       value: 
@@ -1447,6 +1463,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7669269751350471365, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+      propertyPath: textToEnable
+      value: 
+      objectReference: {fileID: 1040984139}
+    - target: {fileID: 7669269751350471365, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
       propertyPath: answerChecker
       value: 
       objectReference: {fileID: 1653354361}
@@ -1530,6 +1550,31 @@ PrefabInstance:
 --- !u!4 &1040984137 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8607912437448045643, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+  m_PrefabInstance: {fileID: 1040984136}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1040984138 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1967311082464095533, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+  m_PrefabInstance: {fileID: 1040984136}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1040984139 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6791387769981701374, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+  m_PrefabInstance: {fileID: 1040984136}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1040984140 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8638418257287329325, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+  m_PrefabInstance: {fileID: 1040984136}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1040984141 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7667012493999861707, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
+  m_PrefabInstance: {fileID: 1040984136}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1040984142 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8514920014287397786, guid: 9f6830600d68c594e96ed6e903f1f3b7, type: 3}
   m_PrefabInstance: {fileID: 1040984136}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1048470220
